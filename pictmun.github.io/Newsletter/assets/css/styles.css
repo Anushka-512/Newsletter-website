@@ -1,0 +1,97 @@
+html,
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    box-shadow: rgb(153, 153, 153) 0px 3px 10px;
+}
+
+header img {
+    height: 100px;
+}
+
+header .title {
+    font-size: 2.5rem;
+}
+
+header .sub-title {
+    font-size: 1.2rem;
+}
+
+.o-title {
+    font-size: 2rem;
+}
+
+.active {
+    box-shadow: rgb(153, 153, 153) 0px 3px 10px;
+    padding: 15px;
+}
+
+.card-deck .card {
+    box-shadow: rgb(153, 153, 153) 0px 3px 10px;
+    max-width: 320px;
+}
+
+.card-img-top {
+    border-bottom: solid 3px black;
+}
+
+.text-muted {
+    padding: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .text-muted {
+        padding: 0;
+    }
+}
+
+.footer-copyright {
+    background-color: #000;
+    color: #eee;
+}
+
+/*PRELOADING------------ */
+
+#overlayer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    background: #000;
+}
+
+.loader {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
+
+.loader img {
+    height: 8rem;
+}
+
+.loader-spin {
+    border: 4px solid #a4a4a4;
+    border-top: 4px solid #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    margin-top: 25px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
